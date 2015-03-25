@@ -56,19 +56,6 @@ suite('make y getTok', function() {
     });	
 });
 
-suite('tests para main()', function() {
-	test('Asignación', function() {
-		INPUT.value = 'var a = 3;';
-        main();
-		assert.equal(OUTPUT.innerHTML,'{\n    "value": "=",\n    "arity": "binary",\n    "first": {\n        "value": "a",\n        "arity": "name"\n    },\n    "second": {\n        "value": 3,\n        "arity": "literal"\n    }\n}');
-    });	
-	test('Comentario', function() {
-		INPUT.value = '// Comentario';
-        main();
-		assert.equal(OUTPUT.innerHTML, 'null');
-    });	
-});
-
 suite('PRUEBAS PARA LA TOKENS()', function() {
 	test('Asignación', function() {
 		source = 'var a = 3;';

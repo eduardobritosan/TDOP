@@ -1,0 +1,36 @@
+{
+  "name": "TDOP",
+  "version": "0.0.0",
+  "description": "Parser JS",
+  "main": "main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduardobritosan/TDOP.git"
+  },
+  "keywords": [
+    "parse",
+    "js",
+    "jquery",
+    "ajax",
+    "karma",
+    "mocha",
+    "chai",
+    "blanket",
+    "html",
+    "css",
+    "json"
+  ],
+  "author": "Eduardo Brito, Hector Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "email": "eduardo_brito27@hotmail.com",
+    "url": "https://github.com/eduardobritosan/TDOP/issues"
+  },
+  "homepage": "https://github.com/eduardobritosan/TDOP"
+}

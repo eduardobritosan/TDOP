@@ -41,6 +41,7 @@
 
   </head>
   <body>
+  <div id="mocha"></div>
     <div id="header" class="header">
       <div style="width:70%;margin:auto;">
           <textarea autofocus cols = "80" rows = "5" id="INPUT"></textarea>
@@ -86,9 +87,11 @@
     <script src="mocha.js"></script>
      <script src="blanket.js"
           data-cover-adapter="mocha-blanket.js"></script>
-    <script src="../csv.js"></script>
+    <script src="../main.js"></script>
+    <script src="../parse.js"></script>
+    <script src="../tokens.js"></script>
     <script>mocha.setup('tdd')</script>
-    <script src="karmatest.js"></script>
+    <script src="tests.js"></script>
     <script>
       mocha.run();
     </script>

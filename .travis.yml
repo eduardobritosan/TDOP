@@ -10,6 +10,7 @@ before_script:
   - sleep 3
   - chmod +x ./node_modules/karma/bin/karma
   - chmod +x ./node_modules/.bin/gulp
+  - sleep 3
 
 branches:
   only:

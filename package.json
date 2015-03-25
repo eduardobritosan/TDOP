@@ -26,11 +26,33 @@
     "css",
     "json"
   ],
-  "author": "Eduardo Brito, Hector Rodriguez",
+  "author": 
+  {"name" : "Eduardo Brito",
+  "email" : "eduardo_brito27@hotmail.com"},
+  "contributors" : "Hector Rodriguez <alu0100774429@ull.edu.es>",
   "license": "ISC",
   "bugs": {
     "email": "eduardo_brito27@hotmail.com",
     "url": "https://github.com/eduardobritosan/TDOP/issues"
   },
-  "homepage": "https://github.com/eduardobritosan/TDOP"
+  "homepage": "https://github.com/eduardobritosan/TDOP",
+  "devDependencies": {
+    "chai": "~2.0.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.4.3",
+    "gulp-karma": "0.0.4",
+    "gulp-minify-css": "^0.4.5",
+    "gulp-minify-html": "^0.1.8",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.3",
+    "karma": "^0.12.31",
+    "karma-chai": "~0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-mocha": "~0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "~2.1.0"
+  }
 }

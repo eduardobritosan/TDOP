@@ -1,7 +1,9 @@
-TDOP, Top Down Operator Precedence
+#Analizador Lexico https://travis-ci.org/eduardobritosan/TDOP.svg?branch=gh-pages
 
-Douglas Crockford
-douglas@crockford.com
+##Made by:
+**Hector Rodriguez Perez** [Github Page](http://hecrp.github.io) | [GitHub account](http://www.github.com/hecrp)
+
+**Eduardo Brito Sanchez** [Github Page](http://eduardobritosan.github.io) | [GitHub account](http://www.github.com/eduardobritosan)
 
 2010-11-12
 

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title><%- title %></title>
+    <script src="parse.js"></script>
+    <script src="tokens.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="main.js"></script>
+
+    <script type="text/javascript">
+      function dump_ajax(fileName) {
+        $.ajax({
+          url : fileName,
+                dataType: "text",
+                success : function (data) {
+            $("#INPUT").val(data);
+            // Si el navegador soporta localStore almacenamos en el localStorage los datos introducidos
+            if (window.localStorage) {localStorage.original = data;}
+                }
+            });
+      }
+
+      function dump_get(fileName) {
+        $.get(fileName, function (data) {
+          $("#INPUT").val(data);
+          if (window.localStorage) {localStorage.original = data;}
+        });
+      };
+ </script>
+
+    <style type="text/css">
+      #drop_zone{
+       width:50%;
+       background-color: black;
+       color: white;
+       padding: 3% 10%;
+       text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <%- body %>
+  </body>
+</html>

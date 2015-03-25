@@ -2,8 +2,11 @@
   <head>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
      <title>Lexical Analyzer</title>
+     <script src="parse.js"></script>
+     <script src="tokens.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+     <script src="main.js"></script>
 
      <script type="text/javascript">
        function dump_ajax(fileName) {
@@ -11,7 +14,7 @@
          	url : fileName,
                  dataType: "text",
                  success : function (data) {
-         		$("#original").val(data);
+         		$("#INPUT").val(data);
          		// Si el navegador soporta localStore almacenamos en el localStorage los datos introducidos
          		if (window.localStorage) {localStorage.original = data;}
                  }
@@ -20,7 +23,7 @@
 
        function dump_get(fileName) {
          $.get(fileName, function (data) {
-         	$("#original").val(data);
+         	$("#INPUT").val(data);
          	if (window.localStorage) {localStorage.original = data;}
          });
        };
@@ -40,7 +43,7 @@
   <body>
     <div id="header" class="header">
       <div style="width:70%;margin:auto;">
-          <textarea autofocus cols = "80" rows = "5" id="original"></textarea>
+          <textarea autofocus cols = "80" rows = "5" id="INPUT"></textarea>
       </div>
       <div id="drop_zone">Drop files here</div>
       <br />
@@ -56,7 +59,7 @@
        	fileReader.onload = function(fileLoadedEvent)
        	{
        		var textFromFileLoaded = fileLoadedEvent.target.result;
-       		document.getElementById("original").value = textFromFileLoaded;
+       		document.getElementById("INPUT").value = textFromFileLoaded;
        	};
        	fileReader.readAsText(fileToLoad, "UTF-8");
          evt.target.style.background = "black";
@@ -76,11 +79,9 @@
         <button id ="input2" type="button" onclick="dump_ajax('input2.txt');">input2</button>
         <button id ="input"  type="button" onclick="dump_ajax('input.txt');">input</button>
         <button id ="hello"  type="button" onclick="dump_ajax('hello.txt');">hello</button>
-        <button id ="PARSE"  type="button" onclick="dump_ajax('hello.txt');">PARSE</button>
+        <button id ="PARSE"  value=parse type="button" >PARSE</button>
       </div>
-      <div style="width:70%;margin:auto;">
-          <textarea autofocus cols = "80" rows = "5" id="final"></textarea>
-      </div>
+      <pre id=OUTPUT></pre>
     </div>
   </body>
 

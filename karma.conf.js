@@ -33,7 +33,6 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
       'gulpfile.js',
-      'tests/test.js',
       'app.js'
     ],
 
@@ -73,9 +72,6 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['PhantomJS', 'Firefox'],
-
-    plugins: ['html2js'],
-
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits

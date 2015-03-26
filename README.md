@@ -4,7 +4,13 @@
 
 **Eduardo Brito Sanchez** [Github Page](http://eduardobritosan.github.io) | [GitHub account](http://www.github.com/eduardobritosan)
 
-[Link travis](https://travis-ci.org/eduardobritosan/TDOP)
+##**[Link Travis-CI](https://travis-ci.org/eduardobritosan/TDOP)**
+
+##**[Link Heroku](https://tdopv2.herokuapp.com/)**
+
+##**[Link GH Page](http://eduardobritosan.github.io/TDOP/)**
+
+##**[Link GH Page | Tests](http://eduardobritosan.github.io/TDOP/tests/tests.html)**
 
 2010-11-12
 

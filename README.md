@@ -4,6 +4,8 @@
 
 **Eduardo Brito Sanchez** [Github Page](http://eduardobritosan.github.io) | [GitHub account](http://www.github.com/eduardobritosan)
 
+[Link travis](https://travis-ci.org/eduardobritosan/TDOP)
+
 2010-11-12
 
 tdop.html contains a description of Vaughn Pratt's Top Down Operator Precedence,
